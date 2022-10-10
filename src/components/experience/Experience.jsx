@@ -1,6 +1,12 @@
 import React from 'react'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import './experience.css'
+import {DiHtml5,DiNodejsSmall} from 'react-icons/di'
+import {SiCss3,SiJquery,SiTailwindcss,SiExpress,SiFlutter,
+  SiRubyonrails,SiMongodb,SiSqlite} from 'react-icons/si'
+import {IoLogoJavascript} from 'react-icons/io'
+import {FaReact} from 'react-icons/fa'
+
 const Experience = () => {
   return (
     <section id="experience">
@@ -11,34 +17,28 @@ const Experience = () => {
           <h3> Frontend development</h3>
           <div className="experience_content">
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced </small>
+              <DiHtml5 className='experience__details-icon' />
+              <h4>HTML5</h4>
             </article> 
              <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiCss3 className='experience__details-icon' />
               <h4>CSS</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <IoLogoJavascript className='experience__details-icon' />
               <h4>Javascript</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <FaReact className='experience__details-icon' />
               <h4>Reactjs</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiTailwindcss className='experience__details-icon' />
               <h4>TailwindCss</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiJquery className='experience__details-icon' />
               <h4>Jquery</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
           </div>
         </div>
@@ -47,34 +47,28 @@ const Experience = () => {
         <h3> Backend development</h3>
           <div className="experience_content">
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <DiNodejsSmall className='experience__details-icon' />
               <h4>Nodejs</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
              <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiExpress className='experience__details-icon' />
               <h4>Express</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
-              <h4>Javascript</h4>
-              <small className='text-light'>Experienced </small>
+              <SiFlutter className='experience__details-icon' />
+              <h4>FLUTTER</h4>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiRubyonrails className='experience__details-icon' />
               <h4>Ruby On Rails</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiMongodb className='experience__details-icon' />
               <h4>MongoDb</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
             <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon' />
+              <SiSqlite className='experience__details-icon' />
               <h4>SQL</h4>
-              <small className='text-light'>Experienced </small>
             </article> 
           </div>
         </div>
