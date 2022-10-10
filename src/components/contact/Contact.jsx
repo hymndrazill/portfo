@@ -1,10 +1,7 @@
 import "./contact.css"
-import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
-
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 
 const Contact = () => {
   const form = useRef();
@@ -12,22 +9,23 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_g4ww868', 'template_hpbudig', e.target, 'JA2pGoXsaSjpEaYsZ')
-    e.target.reset()
   };
-
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
       <h2> Contact me</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon"/>
-            <h4> Email</h4>
-            <h5> email@email.com</h5>
-            <a href="mailto:email"> Send an email </a>
-          </article>
-         {
+            <div className="map__wrap">
+                <MapContainer center={[35.77738376878495, 10.824267917959604]} zoom={13}>
+                  <TileLayer  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"></TileLayer>
+                  <Marker position={[35.77738376878495, 10.824267917959604]}>
+                      <Popup> GET ME A COFFEE!.</Popup>
+                  </Marker>
+                </MapContainer>
+            </div>
+
+            {
               /* 
               <article className="contact__option">
             <RiMessengerLine/>
