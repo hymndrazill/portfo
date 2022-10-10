@@ -5,7 +5,6 @@ const Buttons = () => {
     <div className='Button'>
         <a href={SrihaFiras_Resume} className="btn" download >Download CV</a>
         <a href="#contact" className='btn btn-primary'>Contact Me.</a>
-
     </div>
   )
 }

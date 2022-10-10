@@ -5,22 +5,31 @@
 }
 
 .portfolio__items {
-    background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    
+    cursor: pointer;
+
 
 }
 
-.portfolio__item:hover {
+.portfolio__items:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    -webkit-transform: scale(1.3);
+	transform: scale(0.8);
+
 }
 
 .portfolio__item-image{
     border-radius: 1.5rem;
+    margin: 5px;
+	padding: 0;
     overflow: hidden;
+    
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
@@ -31,8 +40,6 @@
     gap:1rem;
     margin-bottom: 1rem;
 }
-
-
 
 /* MEDIA QUERIES */ 
 

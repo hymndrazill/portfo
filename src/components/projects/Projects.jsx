@@ -1,52 +1,50 @@
 import "./projects.css"
 import React from 'react'
-import myself  from '../../assets/myself.jpg'
-
-
+import dashboard from '../../assets/dashboard.png'
+import myself from '../../assets/myself.jpg'
+import BlogSS from '../../assets/BlogSS.png';
+import Quiz from '../../assets/Quiz.png';
+import guessNumber from '../../assets/guessNumber.png';
+import Booking from '../../assets/Booking.png';
+import NetflixClone from '../../assets/NetflixClone.png';
 const Projects = () => {
 
   const data = [
       {
         id:1,
-        image: myself,
-        title: 'Some Project that is going to be changed',
-        github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
+        image: dashboard,
+        title: 'Admin Dashboard',
+        github: 'https://github.com/hymndrazill/AdminDashboard',
       },
       {
         id:2,
-        image: myself,
-        title: 'Some Project that is going to be changed',
-        github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
+        image: Quiz,
+        title: 'Quiz Game',
+        github: 'https://github.com/hymndrazill/Quiz',
       },
       {
         id:3,
-        image: myself,
-        title: 'Some Project that is going to be changed',
-        github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
+        image: guessNumber,
+        title: 'Classic guessMyNumber',
+        github: 'https://github.com/hymndrazill/guessMyNumber',
       },
       {
         id:4,
-        image: myself,
-        title: 'Some Project that is going to be changed',
-        github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
+        image: Booking,
+        title: 'Booking.com Clone',
+        github: 'https://github.com/hymndrazill/BookingClone',
       },
       {
         id:5,
-        image: myself,
-        title: 'Some Project that is going to be changed',
+        image: BlogSS,
+        title: 'Blog',
         github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
       },
       {
         id:6,
-        image: myself,
-        title: 'Some Project that is going to be changed',
+        image: NetflixClone,
+        title: 'Netflix Clone',
         github: 'https://github.com/hymndrazill',
-        demo: 'https://github.com/hymndrazill'
       }
   ]
 
@@ -59,16 +57,15 @@ const Projects = () => {
               
               data.map(({id, image, title, github, demo}) =>
             
-                  <article className="portfolio__items">
+                  <article  key={id} className="portfolio__items">
                 <div className="portfolio__item-image">
                   
                           {/*  TAKING SCREENSHOTS OF OTHER PROJECTS TO PUT  HERE.   */}
-                <img src={image} alt={title} />
+                <img  src={image} alt={title} />
                 </div>
                   <h3> {title}</h3>
                   <div className="portfolio__item_button">
                     <a href={github} className="btn">Github Repo</a>
-                    <a href={demo} target='_blank' className="btn btn-primary"> Live Demo</a>
                   </div>          
           </article>  
                 

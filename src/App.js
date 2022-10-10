@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import Experience from "./components/experience/Experience"
 import Projects from "./components/projects/Projects"
-import {useState, useEffect,CSSProperties} from 'react';
+import {useState, useEffect} from 'react';
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
@@ -14,19 +14,16 @@ function App() {
   
     const style = { 
       position: "fixed",
-       top: "50%", 
-       left: "50%",
-        transform: "translate(-50%, -50%)" 
-
+      top: "50%", 
+      left: "50%",
+      transform: "translate(-50%, -50%)" 
   };
   useEffect(()=> {
     setLoading(true);
     setTimeout(()=>{
       setLoading(false);
     },5000)
-
   }, [])
-
 
   return (
     <>
@@ -46,7 +43,6 @@ function App() {
         <Projects/>
         <Contact/>
       <Footer/>
-  
     </>
       }
    </>
