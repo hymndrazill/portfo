@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-color:var(--color-bg);
+color:var(--color-white);
 }
 
 .footer__logo {
@@ -47,5 +47,4 @@ display: inline-block;
 }
 .footer__copyright {
     margin-bottom: 4rem;
-    color: var(--color-bg);
 }
