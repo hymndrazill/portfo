@@ -1,7 +1,6 @@
 import "./projects.css"
 import React from 'react'
 import dashboard from '../../assets/dashboard.png'
-import myself from '../../assets/myself.jpg'
 import BlogSS from '../../assets/BlogSS.png';
 import Quiz from '../../assets/Quiz.png';
 import guessNumber from '../../assets/guessNumber.png';
@@ -15,38 +14,50 @@ const Projects = () => {
         image: dashboard,
         title: 'Admin Dashboard',
         github: 'https://github.com/hymndrazill/AdminDashboard',
+        demo: dashboard
       },
       {
         id:2,
         image: Quiz,
         title: 'Quiz Game',
         github: 'https://github.com/hymndrazill/Quiz',
+        demo: Quiz
+
       },
       {
         id:3,
         image: guessNumber,
         title: 'Classic guessMyNumber',
         github: 'https://github.com/hymndrazill/guessMyNumber',
+        demo: guessNumber
+
       },
       {
         id:4,
         image: Booking,
         title: 'Booking.com Clone',
         github: 'https://github.com/hymndrazill/BookingClone',
+        demo: Booking
+
       },
       {
         id:5,
         image: BlogSS,
         title: 'Blog',
         github: 'https://github.com/hymndrazill',
+        demo: BlogSS
+
       },
       {
         id:6,
         image: NetflixClone,
         title: 'Netflix Clone',
         github: 'https://github.com/hymndrazill',
+        demo: NetflixClone
+
       }
   ]
+
 
   return (
     <section  id="projects">
@@ -66,6 +77,8 @@ const Projects = () => {
                   <h3> {title}</h3>
                   <div className="portfolio__item_button">
                     <a href={github} className="btn">Github Repo</a>
+                    <a href={demo} target='_blank' className="btn">Check it.</a>
+
                   </div>          
           </article>  
                 

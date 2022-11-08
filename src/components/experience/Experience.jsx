@@ -2,7 +2,7 @@ import React from 'react'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import './experience.css'
 import {DiHtml5,DiNodejsSmall} from 'react-icons/di'
-import {SiCss3,SiJquery,SiTailwindcss,SiExpress,SiFlutter,
+import {SiCss3,SiJquery,SiTailwindcss,SiExpress,
   SiRubyonrails,SiMongodb,SiSqlite} from 'react-icons/si'
 import {IoLogoJavascript} from 'react-icons/io'
 import {FaReact} from 'react-icons/fa'
@@ -55,8 +55,8 @@ const Experience = () => {
               <h4>Express</h4>
             </article> 
             <article className='experience__details'>
-              <SiFlutter className='experience__details-icon' />
-              <h4>FLUTTER</h4>
+            <IoLogoJavascript className='experience__details-icon' />
+              <h4>JS</h4>
             </article> 
             <article className='experience__details'>
               <SiRubyonrails className='experience__details-icon' />
