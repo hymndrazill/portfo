@@ -28,7 +28,7 @@ const Projects = () => {
         id:3,
         image: fiverClone,
         title: 'Fiver Clone UI',
-        github: 'https://github.com/hymndrazill/fiverClone',
+        github: 'https://github.com/hymndrazill/fiverC',
         demo: fiverClone
 
       },
