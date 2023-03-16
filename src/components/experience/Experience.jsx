@@ -56,7 +56,7 @@ const Experience = () => {
             </article> 
             <article className='experience__details'>
             <IoLogoJavascript className='experience__details-icon' />
-              <h4>JS</h4>
+              <h4>Javascript</h4>
             </article> 
             <article className='experience__details'>
               <SiRubyonrails className='experience__details-icon' />

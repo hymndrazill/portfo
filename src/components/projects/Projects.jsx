@@ -3,7 +3,7 @@ import React from 'react'
 import dashboard from '../../assets/dashboard.png'
 import BlogSS from '../../assets/BlogSS.png';
 import Quiz from '../../assets/Quiz.png';
-import guessNumber from '../../assets/guessNumber.png';
+import fiverClone from '../../assets/fiverClone.png';
 import Booking from '../../assets/Booking.png';
 import NetflixClone from '../../assets/NetflixClone.png';
 const Projects = () => {
@@ -26,10 +26,10 @@ const Projects = () => {
       },
       {
         id:3,
-        image: guessNumber,
-        title: 'Classic guessMyNumber',
-        github: 'https://github.com/hymndrazill/guessMyNumber',
-        demo: guessNumber
+        image: fiverClone,
+        title: 'Fiver Clone UI',
+        github: 'https://github.com/hymndrazill/fiverClone',
+        demo: fiverClone
 
       },
       {
